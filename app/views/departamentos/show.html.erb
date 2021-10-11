@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table table-bordered table-hoover">
+    <thead>
+        <%= render  "produtos/coluna" %>
+    </thead>
+    <tbody>
+        <%= render @produtos_por_departamento %>
+    </tbody>
+</table>
+
+<%= link_to 'Editar Departamento', edit_departamento_path(@departamento), class: "btn btn-default" %> |
+<%= link_to 'Voltar', departamentos_path, class: "btn btn-default" %>
